@@ -1,6 +1,6 @@
-# About Me
+# About Me LAB 4
 
-### Author: Student / group name
+### Author: Don Choi / Tracy Oakley (Driver)
 
 ### Links and resources
 
