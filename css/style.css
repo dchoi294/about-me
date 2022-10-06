@@ -3,24 +3,22 @@ header {
   color:aliceblue;
   font-size:medium;
   border: 5px solid black;
+  margin:auto;
 }
 
-footer {
-  color: aliceblue;
-  background-color: black;
-}
 
 body{
   color: aliceblue;
 }
 
 main {
-  height: 790px;
+  margin: auto;
 }
 
 .top-section {
   text-align: left;
   height:300px;
+  margin:auto;
 }
 
 .top-section img {
@@ -29,16 +27,31 @@ main {
   width: 300px;
 }
 
-.lower-section{
+.middle-section{
   text-align: left;
+  margin:auto;
+}
+
+.lower-section{
+  margin:auto;
+}
+
+footer {
+  color: aliceblue;
+  background-color: black;
+  margin:auto;
 }
 
 h1 {
   font-size: 7rem;
 }
 
-h2{
+h2 {
   font-size: 40px;
+}
+
+h3 {
+  font-size:20px;
 }
 
 ul {
