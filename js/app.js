@@ -49,19 +49,21 @@ function question_2(){
   }
 }
 
-
-let guessAge = prompt('Am I over 25?').toLowerCase();
-if(guessAge === 'yes' || guessAge === 'y') {
-  alert('Shhhh, do not tell anyone else!');
-  console.log('Shhhh, do not tell anyone else!');
-  correctNumb++;
-} else if(guessAge === 'no' || guessAge === 'n'){
-  alert('Wrong!!!');
-  console.log('Wrong!!!');
-  wrongNumb++;
-} else {
-  noneAnswer++;
+function question_3(){
+  let guessAge = prompt('Am I over 25?').toLowerCase();
+  if(guessAge === 'yes' || guessAge === 'y') {
+    alert('Shhhh, do not tell anyone else!');
+    console.log('Shhhh, do not tell anyone else!');
+    correctNumb++;
+  } else if(guessAge === 'no' || guessAge === 'n'){
+    alert('Wrong!!!');
+    console.log('Wrong!!!');
+    wrongNumb++;
+  } else {
+    noneAnswer++;
+  }
 }
+
 
 let guessMovie = prompt('Do I love LotR?!').toLowerCase();
 if(guessMovie === 'yes' || guessMovie === 'y') {
