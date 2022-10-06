@@ -79,19 +79,21 @@ function question_4(){
   }
 }
 
-
-let guessPet = prompt('Do I own a pet right now?').toLowerCase();
-if(guessPet === 'no' || guessPet === 'n') {
-  alert('Yeah, unluckily, I do not have a pet right now.');
-  console.log('Yeah, unluckily, I do not have a pet right now.');
-  correctNumb++;
-} else if(guessPet === 'yes' || guessPet === 'y'){
-  alert('No, I do not own a pet.');
-  console.log('No, I do not own a pet.');
-  wrongNumb++;
-} else {
-  noneAnswer++;
+function question_5(){
+  let guessPet = prompt('Do I own a pet right now?').toLowerCase();
+  if(guessPet === 'no' || guessPet === 'n') {
+    alert('Yeah, unluckily, I do not have a pet right now.');
+    console.log('Yeah, unluckily, I do not have a pet right now.');
+    correctNumb++;
+  } else if(guessPet === 'yes' || guessPet === 'y'){
+    alert('No, I do not own a pet.');
+    console.log('No, I do not own a pet.');
+    wrongNumb++;
+  } else {
+    noneAnswer++;
+  }
 }
+
 
 ////-----------------------------------------------------------------Lab2
 
