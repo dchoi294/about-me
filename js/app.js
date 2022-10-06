@@ -11,6 +11,13 @@ let wrongNumb = 0;
 let noneAnswer = 0;
 
 question_1();
+question_2();
+question_3();
+question_4();
+question_5();
+question_6();
+question_7();
+
 
 function question_1(){
   let favColor = prompt('Do I like color blue?').toLowerCase();
@@ -28,18 +35,20 @@ function question_1(){
 }
 
 
-
-let guessCity = prompt('Do I live in seattle?').toLowerCase();
-if(guessCity === 'yes' || guessCity === 'y'){
-  alert('Wow, you got it right!');
-  correctNumb++;
-} else if(guessCity === 'no' || guessCity === 'n'){
-  alert('Wrong answer!');
-  console.log('Wrong answer!');
-  wrongNumb++;
-} else {
-  noneAnswer++;
+function question_2(){
+  let guessCity = prompt('Do I live in seattle?').toLowerCase();
+  if(guessCity === 'yes' || guessCity === 'y'){
+    alert('Wow, you got it right!');
+    correctNumb++;
+  } else if(guessCity === 'no' || guessCity === 'n'){
+    alert('Wrong answer!');
+    console.log('Wrong answer!');
+    wrongNumb++;
+  } else {
+    noneAnswer++;
+  }
 }
+
 
 let guessAge = prompt('Am I over 25?').toLowerCase();
 if(guessAge === 'yes' || guessAge === 'y') {
