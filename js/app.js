@@ -139,45 +139,49 @@ function question_6(){
     alert('You had 4 attempts and still got wrong! It was 22.');
     console.log('You had 4 attempts and still got wrong! It was 22.');
   }
-}
 
-
-
-let answersFood = ['chicken',' pizza',' pho'];
-let userFood = prompt('Guess one of my top 3 favorite food!').toLowerCase();
-let boolean = false;
-
-for (let i = 0; i < answersFood.length; i++) {
-  if(userFood === answersFood[i]) {
-    alert('You got it right! And here are my top 3 favorite food were ' + answersFood);
-    boolean = true;
+  if(count === 0) {
+    alert('Wow! You got it right at once!');
+    console.log('Wow! You got it right at once!');
+  } else if(count !== 0) {
+    alert('You got it right! You guessed ' + count + ' times. Just letting you know.');
+    console.log('You got it right! You guessed ' + count + ' times. Just letting you know.');
+  } else if(countDown === 4) {
+    alert('You have used all of your chances to guess my favorite number! You will never know my favorite number is 2!!');
+    console.log('You have used all of your chances to guess my favorite number! You will never know my favorite number is 2!!');
   }
 }
-if(boolean === false) {
-  for(let count = 7; count > 0; count--){
-    userFood = prompt('Wrong food! You got ' + (count-1) + ' more chance to guess!');
-    for (let i = 0; i < answersFood.length; i++) {
-      if(userFood === answersFood[i]) {
-        alert('You got it right! And here are my top 3 favorite food were ' + answersFood);
-        count = 0;
+
+
+function question_7(){
+  let answersFood = ['chicken',' pizza',' pho'];
+  let userFood = prompt('Guess one of my top 3 favorite food!').toLowerCase();
+  let boolean = false;
+
+  for (let i = 0; i < answersFood.length; i++) {
+    if(userFood === answersFood[i]) {
+      alert('You got it right! And here are my top 3 favorite food were ' + answersFood);
+      boolean = true;
+    }
+  }
+  if(boolean === false) {
+    for(let count = 7; count > 0; count--){
+      userFood = prompt('Wrong food! You got ' + (count-1) + ' more chance to guess!');
+      for (let i = 0; i < answersFood.length; i++) {
+        if(userFood === answersFood[i]) {
+          alert('You got it right! And here are my top 3 favorite food were ' + answersFood);
+          count = 0;
+        }
       }
     }
   }
+
 }
+
 
 
 ////    Lab 2
 
-if(count === 0) {
-  alert('Wow! You got it right at once!');
-  console.log('Wow! You got it right at once!');
-} else if(count !== 0) {
-  alert('You got it right! You guessed ' + count + ' times. Just letting you know.');
-  console.log('You got it right! You guessed ' + count + ' times. Just letting you know.');
-} else if(countDown === 4) {
-  alert('You have used all of your chances to guess my favorite number! You will never know my favorite number is 2!!');
-  console.log('You have used all of your chances to guess my favorite number! You will never know my favorite number is 2!!');
-}
 
 
 
