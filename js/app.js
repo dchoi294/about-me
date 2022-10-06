@@ -64,19 +64,21 @@ function question_3(){
   }
 }
 
-
-let guessMovie = prompt('Do I love LotR?!').toLowerCase();
-if(guessMovie === 'yes' || guessMovie === 'y') {
-  alert('How did you get it right?! Awesome! I love LotR series!');
-  console.log('How did you get it right?! Awesome! I love LotR series!');
-  correctNumb++;
-} else if(guessMovie === 'no' || guessMovie === 'n'){
-  alert('No, I fell in love with LotR series!!');
-  console.log('No, I fell in love with LotR series!!');
-  wrongNumb++;
-} else {
-  noneAnswer++;
+function question_4(){
+  let guessMovie = prompt('Do I love LotR?!').toLowerCase();
+  if(guessMovie === 'yes' || guessMovie === 'y') {
+    alert('How did you get it right?! Awesome! I love LotR series!');
+    console.log('How did you get it right?! Awesome! I love LotR series!');
+    correctNumb++;
+  } else if(guessMovie === 'no' || guessMovie === 'n'){
+    alert('No, I fell in love with LotR series!!');
+    console.log('No, I fell in love with LotR series!!');
+    wrongNumb++;
+  } else {
+    noneAnswer++;
+  }
 }
+
 
 let guessPet = prompt('Do I own a pet right now?').toLowerCase();
 if(guessPet === 'no' || guessPet === 'n') {
