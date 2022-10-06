@@ -97,48 +97,51 @@ function question_5(){
 
 ////-----------------------------------------------------------------Lab2
 
+function question_6(){
+  let guessNumb = prompt('Guess my favorite number! The hint is the number is between 1 to 100!');
+  let count = 1;
+  let countDown = 4;
 
-let guessNumb = prompt('Guess my favorite number! The hint is the number is between 1 to 100!');
-let count = 1;
-let countDown = 4;
-
-while(countDown > 0) {
-  if(guessNumb === 22){
-    alert('You got it right!! It took ' + count + ' attempts to get the answer!');
-    console.log('You got it right!! It took ' + count + ' attempts to get the answer!');
-    countDown = 0;
-  }
-  else if(guessNumb >= 23) {
-    guessNumb = prompt('Your number is too high! Guess again! You got ' + countDown + ' times left to guess!');
-    console.log('Your number is too high! Guess again! You got ' + countDown + ' times left to guess!');
-    count++;
-    countDown--;
-  } else if(guessNumb <= 21) {
-    guessNumb = prompt('Your number is too low! Guess again! You got ' + countDown + ' times left to guess!');
-    console.log('Your number is too low! Guess again! You got ' + countDown + ' times left to guess!');
-    count++;
-    countDown--;
-  } else if(countDown === 1) {
-    if(guessNumb >= 23){
-      guessNumb = prompt('You number is too high! And you got your last chance. Ready to give your last shot!?');
-      console.log('You got your last chance. Ready to give your last shot!?');
-    } else if(guessNumb <= 21) {
-      guessNumb = prompt('Your number is too low! You got your last chance. Ready to give your last shot!?');
-      console.log('You got your last chance. Ready to give your last shot!?');
+  while(countDown > 0) {
+    if(guessNumb === 22){
+      alert('You got it right!! It took ' + count + ' attempts to get the answer!');
+      console.log('You got it right!! It took ' + count + ' attempts to get the answer!');
+      countDown = 0;
     }
-    countDown--;
-  } else {
-    guessNumb = prompt('Guess again! You got ' + countDown + ' times left to guess!');
-    console.log('Guess again! You got ' + countDown + ' times left to guess!');
-    count++;
-    countDown--;
+    else if(guessNumb >= 23) {
+      guessNumb = prompt('Your number is too high! Guess again! You got ' + countDown + ' times left to guess!');
+      console.log('Your number is too high! Guess again! You got ' + countDown + ' times left to guess!');
+      count++;
+      countDown--;
+    } else if(guessNumb <= 21) {
+      guessNumb = prompt('Your number is too low! Guess again! You got ' + countDown + ' times left to guess!');
+      console.log('Your number is too low! Guess again! You got ' + countDown + ' times left to guess!');
+      count++;
+      countDown--;
+    } else if(countDown === 1) {
+      if(guessNumb >= 23){
+        guessNumb = prompt('You number is too high! And you got your last chance. Ready to give your last shot!?');
+        console.log('You got your last chance. Ready to give your last shot!?');
+      } else if(guessNumb <= 21) {
+        guessNumb = prompt('Your number is too low! You got your last chance. Ready to give your last shot!?');
+        console.log('You got your last chance. Ready to give your last shot!?');
+      }
+      countDown--;
+    } else {
+      guessNumb = prompt('Guess again! You got ' + countDown + ' times left to guess!');
+      console.log('Guess again! You got ' + countDown + ' times left to guess!');
+      count++;
+      countDown--;
+    }
+  }
+
+  if(countDown === 0){
+    alert('You had 4 attempts and still got wrong! It was 22.');
+    console.log('You had 4 attempts and still got wrong! It was 22.');
   }
 }
 
-if(countDown === 0){
-  alert('You had 4 attempts and still got wrong! It was 22.');
-  console.log('You had 4 attempts and still got wrong! It was 22.');
-}
+
 
 let answersFood = ['chicken',' pizza',' pho'];
 let userFood = prompt('Guess one of my top 3 favorite food!').toLowerCase();
